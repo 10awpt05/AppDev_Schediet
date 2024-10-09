@@ -1,0 +1,105 @@
+.cardheader {
+  margin: 0;
+  background-color: #A594F9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 10px;
+  padding: 60px; // Adjust padding as needed
+  border-radius: 0 0 50% 50%;
+}
+img.profile {
+  display: block;
+  width: 130px;
+  height: 130px;
+  border-radius: 100%;
+  margin: auto;  
+  transform: translateY(-50%); // Adjust this if needed
+  position: relative; 
+  z-index: 10;
+}
+
+.bglogo {
+  --background: url('../../assets/img/bglogo1.png');
+}
+
+ion-content.content-center {
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  
+}
+
+.word {
+  font-family: 'lalezar';
+  font-size: 32px;
+  align-items: center;
+  text-align: center;
+  margin-top: 10px;
+  color:#F5EFFF;
+  
+}
+.edit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative; 
+  z-index: 20;
+  width: 70px;
+  height: 70px;
+  margin-left: 55%;
+  margin-top: -76%;
+
+}
+ion-icon {
+  color: rgb(7, 0, 0);
+  width: 50px;
+  height: 50px;
+  display: flex;
+}
+
+ 
+.button1 {
+  display: block;
+    position: relative; 
+    z-index: 20;
+    border-radius: 100%;
+    --background: #A594F9;
+    width: 100%;
+    height: 30px;
+    margin-top: -50px;
+    color: white;
+    
+    
+}
+.user-image {
+  width: 90px;
+    height: 90px;
+     border-radius: 100%;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.btnsave {
+  margin-top: 50px;
+}
+.user1 {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+}
+.trash1 {
+  
+  margin-left: 5px; 
+  width: 40px;
+  height: 40px;
+  
+  
+} 
+
+

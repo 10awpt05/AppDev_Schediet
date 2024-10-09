@@ -1,0 +1,22 @@
+ion-tab-bar {
+    --background: #A594F9; /* Change the tab background color */
+    --color-selected: #3880ff; /* Color for the selected tab */
+    --color: #F5EFFF; /* Default color for unselected tabs */
+    height: 75px; /* Adjust tab height if needed */
+  }
+  
+  ion-tab-button {
+    --color-selected: #007aff; /* Customize selected tab color */
+    --color: #F5EFFF; /* Customize default tab color */
+    font-size: 14px;
+    padding: 10px;
+  }
+  
+  ion-tab-button[aria-selected="true"] {
+    background-color: #A594F9; /* Custom background for the selected tab */
+  }
+  
+  ion-icon {
+    width: 24px;
+    height: 24px;
+  }

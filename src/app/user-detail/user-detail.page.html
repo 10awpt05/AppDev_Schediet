@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>User Details</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="goBack()">
+        <ion-icon name="arrow-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>{{ user?.name }}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <img class="profile-image" [src]="user?.imgUrl || '../../assets/img/default-profile.png'" alt="Profile Picture" />
+      <div>
+        <strong>Age:</strong> {{ user?.age }}<br />
+        <strong>Gender:</strong> {{ user?.gender }}<br />
+        <strong>Weight:</strong> {{ user?.Weight }} kg<br />
+        <strong>Blood Type:</strong> {{ user?.BloodType }}<br />
+      </div>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

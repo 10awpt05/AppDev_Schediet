@@ -1,0 +1,20 @@
+<ion-content [fullscreen]="true" class="content-center">
+ 
+  <img class="img1" [src]="img" alt="Logo">
+
+  
+  <ion-card class="login-card">
+    <ion-label>LOGIN</ion-label>
+    
+    <ion-item>
+      <ion-input [(ngModel)]="username" label="Username" label-placement="floating" fill="outline" placeholder="Enter Username"></ion-input>
+    </ion-item>
+
+    <ion-item class="item">
+      <ion-input [(ngModel)]="password" label="Password" label-placement="floating" fill="outline" type="password" placeholder="Enter Password"></ion-input>
+    </ion-item>
+    
+    <ion-button (click)="loginUser()">Login</ion-button>
+    <ion-button (click)="toreg()">Register</ion-button>
+  </ion-card>
+</ion-content>

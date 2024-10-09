@@ -1,0 +1,7 @@
+{
+  "name": "schediet",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

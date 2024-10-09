@@ -1,0 +1,56 @@
+.bglogo {
+    --background: url('../../assets/img/bglogo1.png');
+}
+.cardheader {
+    margin-top: 0%;
+    margin-left: 0%;
+    margin-right: 0%;
+    background-color: #A594F9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 10px;
+    padding-bottom: 100px;
+    align-items: center;
+    position: relative; 
+    z-index: 1;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+  }
+  .word {
+    font-family: 'lalezar';
+    font-size: 32px;
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+    color:#F5EFFF;
+    
+  }
+  img {
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    transform: translateY(-60%);
+    position: relative;
+    position: relative; 
+    z-index: 10;
+    align-items: center;
+    justify-content: center;
+    display: block;
+  }
+.container {
+  text-align: center;
+  padding: 20px;
+  padding-bottom: 70px; 
+  margin-top: -34%;
+  background-color: transparent;
+}
+  ion-button {
+    margin-top: 10px;
+   margin-left: 10px;
+   margin-bottom: 10px;
+   margin-right: 10px;
+    width: 130px;
+    height: 50px;
+  }

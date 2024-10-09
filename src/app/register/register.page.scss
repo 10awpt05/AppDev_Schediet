@@ -1,0 +1,31 @@
+.content-center {
+    align-items: center;
+    --background: url('../../assets/img/bglogo1.png');
+}
+
+ion-card {
+    margin-top: 4%;
+    border-radius: 20px;
+    padding-bottom: 30px;
+}
+
+img {
+    display: block;
+     width: 120px;
+     height: 120px;
+     border-radius: 100%;
+    margin: auto;  
+    transform: translateY(50%);
+   position: relative; 
+     z-index: 10;
+   }
+
+ion-toolbar {
+    --background: #A594F9;
+}
+ion-button {
+    --background: #A594F9;
+    color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+  }

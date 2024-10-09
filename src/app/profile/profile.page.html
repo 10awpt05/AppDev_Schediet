@@ -1,0 +1,64 @@
+<ion-content class="bglogo">
+  <!-- Greeting Card -->
+  <ion-card class="cardheader">
+    <ion-label class="word">Welcome, {{ username }}</ion-label>
+  </ion-card>
+
+  <!-- Image Card -->
+  <img class="profile" [src]="profilePicture || '../../assets/img/default-profile.png'" alt="Profile Picture" />
+  
+  <ion-button  (click)="toggleAddUserCard()" class="button1" aria-label="Add User">
+    <ion-icon name="add-outline" size="small"></ion-icon>
+  </ion-button>
+  
+  
+  
+  <!-- Add Users Card -->
+  <ion-card *ngIf="showAddUserCard">
+    <ion-card-header>
+      <ion-card-title>ADD USERS</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      <ion-list>
+        <!-- User Image Selection -->
+        <img class="user-image" (click)="triggerFileInput(fileInput1)" [src]="newUser.imgUrl || '../../assets/img/default-profile.png'" alt="Profile Picture" />
+        <input type="file" #fileInput1 (change)="onFileSelected1($event)" hidden accept="image/*" />
+  
+        <ion-input [(ngModel)]="newUser.name" placeholder="Name" required></ion-input>
+        <ion-input [(ngModel)]="newUser.age" placeholder="Age" type="number" required></ion-input>
+        <ion-input [(ngModel)]="newUser.gender" placeholder="Gender" required></ion-input>
+        <ion-input [(ngModel)]="newUser.Weight" placeholder="Weight" type="number" required></ion-input>
+        <ion-input [(ngModel)]="newUser.BloodType" placeholder="Blood Type" required></ion-input>
+        
+        <ion-button class="btnsave" expand="full" (click)="saveUser()">Save User</ion-button>
+
+      </ion-list>
+    </ion-card-content>
+    
+  </ion-card>
+  
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>USERS</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      <ion-list>
+        <ion-item *ngFor="let user of user1" (click)="navigateToUserDetail(user)" detail>
+          <ion-avatar slot="start">
+            <img class="user1" [src]="user.imgUrl || '../../assets/img/default-profile.png'" alt="Profile Picture" />
+          </ion-avatar>
+          <ion-label>
+            <h2>{{ user.name }}</h2>
+          </ion-label>
+          <ion-button class="trash1"  fill="clear" slot="end" (click)="confirmDelete(user)">
+            <ion-icon name="trash-outline" [style]="{'color': 'red'}"></ion-icon>
+          </ion-button>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+  
+  
+</ion-content>
